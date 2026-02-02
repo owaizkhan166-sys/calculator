@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 { font-size: 1.5rem; }
+header .logo p { font-size: 0.8rem; color: #bbb; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.hero {
+    background: #444; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 80vh;
+    color: white;
+}
+
+.hero-content { flex: 1; }
+.hero-content h2 { font-size: 3rem; margin-bottom: 15px; }
+.hero-content p { margin-bottom: 25px; max-width: 500px; color: #ccc; }
+
+.hero-image { flex: 1; text-align: right; }
+.hero-image img { height: 80vh; object-fit: cover; }
+
+
+.btn-blue {
+    background: #3498db;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-download {
+    background: #4a76fd;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.about {
+    display: flex;
+    padding: 80px 10%;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image { flex: 1; }
+.about-image img { width: 100%; border-radius: 5px; }
+
+.about-text { flex: 1; }
+.about-text h3 { font-size: 2rem; }
+.underline {
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    margin: 10px 0 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #222;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .hero, .about { flex-direction: column; text-align: center; height: auto; }
+    .hero-image img { height: 300px; }
+    nav ul { display: none; } 
+}
